@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>World Live Clock</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="favicon-light.png" media="(prefers-color-scheme: light)" rel="icon">
+    <link href="favicon-dark.png" media="(prefers-color-scheme: dark)" rel="icon">
+</head>
+<body>
+<div class="title">
+    <a href="javascript:location.reload()">World Live Clock</a>
+</div>
+<div class="local-time">
+    <div class="time" id="local-time"></div>
+    <div class="time-label">Your local time</div>
+</div>
+<div class="clock">
+    <div class="hand hour" id="hour-hand"></div>
+    <div class="hand minute" id="minute-hand"></div>
+    <div class="hand second" id="second-hand"></div>
+</div>
+<div class="grid-container">
+    <div class="grid-item" id="new-york">
+        <div class="city-name">New York</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="london">
+        <div class="city-name">London</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="paris">
+        <div class="city-name">Paris</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="tokyo">
+        <div class="city-name">Tokyo</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="sydney">
+        <div class="city-name">Sydney</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="moscow">
+        <div class="city-name">Moscow</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="dubai">
+        <div class="city-name">Dubai</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="shanghai">
+        <div class="city-name">Shanghai</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="grid-item" id="sao-paulo">
+        <div class="city-name">São Paulo</div>
+        <div class="time"><span></span></div>
+    </div>
+    <div class="github-button">
+        <a aria-label="View source on GitHub" class="github-button" data-color-scheme="" data-icon="octicon-mark-github"
+           data-size="large" href="https://github.com/NitroStar654/WorldLiveClock">Watch on GitHub</a>
+    </div>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

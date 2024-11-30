@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --clock-color: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --clock-color: #1a1a1a;
+    }
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    text-decoration: underline;
+    text-decoration-color: var(--text-color);
+}
+
+.title a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.local-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.local-time .time {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.time-label {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.clock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
+    margin-bottom: 40px;
+    background: var(--clock-color);
+    box-shadow: 0 0 5px var(--text-color);
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--text-color);
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(0deg);
+}
+
+.hand.hour {
+    height: 4px;
+}
+
+.hand.minute {
+    height: 3px;
+}
+
+.hand.second {
+    height: 2px;
+    background-color: red;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.city-name {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.github-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-color);
+}
+
+.github-button a {
+    color: var(--text-color);
+    text-decoration: none;
+}
